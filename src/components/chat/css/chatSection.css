@@ -1,0 +1,11 @@
+.chat-info-header {
+    height: 8vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70vw;
+    background: #fafafa;
+    border: 1px solid lightgray;
+    align-items: center;
+    display: flex;
+}

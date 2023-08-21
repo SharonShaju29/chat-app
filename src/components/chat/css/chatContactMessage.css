@@ -1,0 +1,7 @@
+.chat-contact-message-wrapper {
+    height:20vh;
+    background:blue;
+    position:absolute;
+    left:35vw;
+    top:20vh;
+}

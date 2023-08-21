@@ -1,0 +1,27 @@
+.header-bar-wrapper {
+  height: 8vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 30vw;
+  background: #fafafa;
+  border: 1px solid lightgray;
+  align-items: center;
+  display: flex;
+  font-size: 3vh;
+  justify-content: space-between;
+}
+
+.image-profile {
+    height:6vh;
+    width:6vh;
+    border-radius: 100px;
+    margin:0px 32px;
+    border:2px solid black;
+    cursor:pointer;
+}
+
+.icon-more {
+   margin:0px 8px;
+   cursor: pointer;
+}

@@ -1,0 +1,63 @@
+.register-box-wrapper {
+    height:600px;
+    width:24vw;
+    border-radius: 8px;
+    background: white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left:150px;
+    padding:24px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.welcome-text {
+    font-size:24px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.chatter-box-title {
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.sign-up {
+    font-size: 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    margin-top:12px;
+}
+
+.input-style {
+    margin-top:12px;
+}
+
+label {
+    display: flex;
+    margin-bottom: 8px;
+}
+
+.input-sizer {
+    padding:12px;
+}
+
+.button-style {
+    background:black;
+    color:white;
+    width:100%;
+    margin-top:36px;
+    padding:10px;
+    display:block;
+}
+
+.no-account-text-style {
+    text-align: center;
+    color:grey;
+    margin-top :24px;
+}
+
+a {
+    text-decoration: none;
+    color:black;
+    font-weight:600;
+}

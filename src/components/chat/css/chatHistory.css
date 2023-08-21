@@ -1,0 +1,31 @@
+.chat-history-wrapper {
+    height:90vh;
+    background: white;
+    border: 1px solid lightgray;
+    width:30vw;
+    position: absolute;
+    top:8vh;
+    left:0;
+    overflow:scroll
+}
+.input-search {
+    width:24vw;
+    padding:8px;
+    border-radius: 24px;
+    background: #FAFAFA;
+}
+
+:where(.css-dev-only-do-not-override-byeoj0).ant-input-affix-wrapper >input.ant-input {
+    background: #FAFAFA;
+}
+
+.message-header {
+    justify-content: center;
+    display: grid;
+    padding-bottom: 12px;
+    border-bottom: 1px solid lightgray;
+}
+
+.header-title {
+    margin:10px 0px;
+}

@@ -1,0 +1,39 @@
+.image-design {
+    height:6vh;
+    width:6vh;
+    border-radius: 100px;
+    margin:0px 12px 0px 32px;
+    border:2px solid black;
+}
+
+.chat-card-wrapper {
+    height:6vh;
+    padding:12px 0px;
+    background: white;
+    color:black;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.chat-card-wrapper:hover {
+    background: lightgray;
+}
+
+.card-time-badge-wrapper {
+    right:24px;
+    position: absolute;
+    text-align: right;
+}
+
+h4 {
+    margin:0;
+}
+
+.span-message {
+    color:grey;
+}
+
+.card-name-font {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
