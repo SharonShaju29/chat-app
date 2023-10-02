@@ -14,6 +14,13 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+.chat-name-img {
+    display: flex;
+    align-items: center;
 }
 
 .chat-card-wrapper:hover {
@@ -21,9 +28,10 @@
 }
 
 .card-time-badge-wrapper {
-    right:24px;
-    position: absolute;
-    text-align: right;
+    /* right:24px; */
+    /* position: absolute; */
+    /* text-align: right; */
+    margin-right:8px;
 }
 
 h4 {

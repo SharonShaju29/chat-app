@@ -1,2 +1,2 @@
-export const userDetails = window.localStorage.getItem('userLog')
-console.log(userDetails)
+
+export const authToken = window.localStorage.getItem('userLog') ?? '';

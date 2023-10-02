@@ -1,0 +1,27 @@
+.message-box-wrapper {
+    height: 8vh;
+    width: 69.8vw;
+    background: white;
+    border:1px solid lightgray;
+    position: fixed;
+    left: 30vw;
+    bottom: 0;
+}
+
+.message-box-input {
+    width:60vw;
+    margin-left:2.5vw;
+    padding:10px;
+    border-radius:24px;
+    top:50%;
+    transform: translateY(-50%);
+    background: #FAFAFA;
+    margin-right:8px;
+}
+.message-send-icon {
+    font-size: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    cursor:pointer;
+}

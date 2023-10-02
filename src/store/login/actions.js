@@ -11,7 +11,7 @@ export const loginAction = (payload, success) => {
           loggedIn: true,
         }));
         dispatch({ type: "isLoggedIn", payload: response.data.data });
-        success();
+        success(response.data.message);
       })
       .catch((err) => {
         console.log(err);

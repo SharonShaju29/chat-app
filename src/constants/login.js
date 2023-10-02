@@ -1,0 +1,3 @@
+export const INVALID_LOGIN = "INVALID_EMAIL_OR_PASSWORD"
+export const OK = "OK"
+export const INVALID_EMAIL = "EMAIL_IS_NOT_VALID"

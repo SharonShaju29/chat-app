@@ -41,6 +41,11 @@ label {
     padding:16px;
 }
 
+.input-err {
+    border-color: red;
+}
+
+
 .button-style {
     background:black;
     color:white;
@@ -60,4 +65,8 @@ a {
     text-decoration: none;
     color:black;
     font-weight:600;
+}
+
+.span-err {
+    color:red;
 }

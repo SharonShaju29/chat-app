@@ -2,23 +2,42 @@ import "./css/chatHistory.css";
 import ChatCard from "./chatCard";
 import { Input } from "antd";
 import { SearchOutlined } from "@ant-design/icons";
-import { useEffect } from "react";
+import { useEffect, useState} from "react";
+import { useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { chatHistoryAction, chatByUserAction } from "../../store/chat/actions";
-import { userDetails } from "../../utils/auth";
-
+import { authToken } from "../../utils/auth";
 
 function ChatHistory() {
   const dispatch = useDispatch();
-
+  const Navigate = useNavigate();
+  const [chats,setChats] = useState([])
+  
   useEffect(() => {
-    dispatch(chatHistoryAction({ user: "sharon@gmail.com" }));
-  }, [dispatch]);
-  let state = useSelector((state) => state.chat.chatHistory);
+    dispatch(chatHistoryAction({ user: "sharon@gmail.com", success:chatListSuccessHandler }));
+  }, []);
 
+  let state = useSelector((state) =>state.chat.chatHistory);
+  
+  function chatListSuccessHandler() {
+     console.log(state)
+  }
+
+ 
+  
   const openChatHandler = (contact) => {
-    dispatch(chatByUserAction({ user: JSON.parse(userDetails).user, contact: contact }));
+    dispatch(
+      chatByUserAction({ user: JSON.parse(authToken).user, contact: contact })
+    );
+    Navigate("/chat/messages/chat");
   };
+ 
+
+  const handleSearchQuery = (event) => {
+    let searchQuery = event.target.value
+    let val = state.filter(item=>item.contactName.includes(searchQuery))
+    setChats(val)
+  }
 
   return (
     <div className="chat-history-wrapper">
@@ -29,13 +48,14 @@ function ChatHistory() {
           size="large"
           placeholder="Search"
           prefix={<SearchOutlined />}
+          onChange={handleSearchQuery}
         />
       </div>
-      {state.map((item, index) => (
+      {chats.map((item, index) => (
         <ChatCard
           name={item.contactName}
-          lastMessage={item.lastMessage.message}
-          time={item.lastMessage.time}
+          lastMessage={item.lastMessage?.message}
+          time={item.lastMessage?.time}
           unseen={item.unseenMessages}
           key={index}
           onClick={() => openChatHandler(item.contact)}
